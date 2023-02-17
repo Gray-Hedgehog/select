@@ -1,36 +1,37 @@
-const select = document.querySelector('.select-1');
-const selectHeader =  document.querySelector('.select-1__header');
-const selectInput = document.querySelector('.select-1__input');
-const selectInputHidden = document.querySelector('._selected-value')
-const selectItems = document.querySelector('.select-1__items');
-const selectItem = document.querySelectorAll('.select-1__item');
-const selectIcon =  document.querySelector('.select-1__icon');
+o2.select = {
+	select: document.querySelector('.select-1'),
+	selectHeader:  document.querySelector('.select-1__header'),
+	selectInput: document.querySelector('.select-1__input'),
+	selectInputHidden: document.querySelector('._selected-value'),
+	selectItems: document.querySelector('.select-1__items'),
+	selectItem: document.querySelectorAll('.select-1__item'),
+	selectIcon:  document.querySelector('.select-1__icon'),
 
+	handleClose(event) {
+		this.selectItems.classList.remove('_active-items');
+		this.selectIcon.classList.remove('select-1__icon--open');
+	},
 
-function handleClose(event) {
-	selectItems.classList.remove('_active-items');
-	selectIcon.classList.remove('select-1__icon--open');
-}
+	windowClose(event) {
+		const hundleClick = event.composedPath().includes(this.select);
 
-function windowClose(event) {
-	const hundleClick = event.composedPath().includes(select);
+		if ( hundleClick == false ) {
+			this.selectItems.classList.remove('_active-items');
+			this.selectIcon.classList.remove('select-1__icon--open');
+		}
+	},
 
-	if ( hundleClick == false ) {
-		selectItems.classList.remove('_active-items');
-		selectIcon.classList.remove('select-1__icon--open');
+	handleToggle() {
+		this.selectItems.classList.toggle('_active-items');
+		this.selectIcon.classList.toggle('select-1__icon--open');
+	},
+
+	handleChoose(event) {
+		let text = event.target.innerText;
+		this.handleClose();
+		this.selectInput.placeholder = text;
+		this.selectInputHidden.placeholder = text;
 	}
 }
 
-function handleToggle() {
-	selectItems.classList.toggle('_active-items');
-	selectIcon.classList.toggle('select-1__icon--open');
-}
-
-function handleChoose(event) {
-	let text = event.target.innerText;
-	handleClose();
-	selectInput.placeholder = text;
-	selectInputHidden.placeholder = text;
-}
-
-window.addEventListener('click', event => windowClose(event))
+window.addEventListener('click', event => o2.select.windowClose(event))

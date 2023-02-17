@@ -18,7 +18,6 @@ const o2 =
 	init()
 	{
 		// this.gSelect.open();
-		// this.mySelect();
 	},
 	/**
 	* отслеживание клика вне блока
