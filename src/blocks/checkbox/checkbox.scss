@@ -1,0 +1,30 @@
+.checkbox-1
+{
+	justify-self: center;
+	display: grid;
+
+	width: 100%;
+	max-width: 100px;
+	padding: 10px;
+	margin: 0 auto;
+}
+.checkbox-1__item
+{
+
+}
+
+.checkbox-1__input
+{
+	// appearance: none;
+}
+
+.checkbox-1__input:checked + .checkbox-1__custom
+{
+	background: green;
+}
+
+.checkbox-1__custom {
+	width: 10px;
+	height: 10px;
+	background: red;
+}

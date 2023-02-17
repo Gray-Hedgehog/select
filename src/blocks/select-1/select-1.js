@@ -1,10 +1,8 @@
 o2.select = {
 	select: document.querySelector('.select-1'),
-	selectHeader:  document.querySelector('.select-1__header'),
 	selectInput: document.querySelector('.select-1__input'),
 	selectInputHidden: document.querySelector('._selected-value'),
 	selectItems: document.querySelector('.select-1__items'),
-	selectItem: document.querySelectorAll('.select-1__item'),
 	selectIcon:  document.querySelector('.select-1__icon'),
 
 	handleClose(event) {
@@ -29,9 +27,10 @@ o2.select = {
 	handleChoose(event) {
 		let text = event.target.innerText;
 		this.handleClose();
-		this.selectInput.placeholder = text;
-		this.selectInputHidden.placeholder = text;
+		this.selectInput.value = text;
+		this.selectInputHidden.value = text;
+		console.log(this.selectInputHidden.value);
 	}
-}
+};
 
-window.addEventListener('click', event => o2.select.windowClose(event))
+window.addEventListener('click', event => o2.select.windowClose(event));
