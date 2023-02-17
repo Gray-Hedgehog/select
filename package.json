@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "check": "node check.js",
     "dev": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "deploy": "gh-pages -d pages"
   },
   "pre-commit": [
     "check"
@@ -52,5 +53,5 @@
   "bugs": {
     "url": "https://github.com/odvapro/front/issues"
   },
-  "homepage": "https://github.com/odvapro/front#readme"
+  "homepage": "https://Gray-Hedgehog.github.io/select"
 }

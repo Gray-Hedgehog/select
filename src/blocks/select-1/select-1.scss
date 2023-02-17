@@ -1,4 +1,4 @@
-.slt
+.select-1
 {
 	position: relative;
 	display: flex;
@@ -10,14 +10,14 @@
 	border: 1px solid #949BA5;
 	border-radius: 4px;
 }
-.slt__header
+.select-1__header
 {
 	position: relative;
 
 	width: 100%;
 }
 
-.slt__icon
+.select-1__icon
 {
 	&::after
 	{
@@ -38,7 +38,7 @@
 	}
 }
 
-.slt__icon--open
+.select-1__icon--open
 {
 	&::after
 	{
@@ -59,7 +59,7 @@
 	}
 }
 
-.slt__label
+.select-1__label
 {
 	position: absolute;
 	top: 8px;
@@ -73,7 +73,7 @@
 	color: #949BA5;
 }
 
-.slt__input
+.select-1__input
 {
 	// position: relative;
 	// z-index: -9999;
@@ -95,7 +95,7 @@
 	}
 }
 
-.slt__items
+.select-1__items
 {
 	display: none;
 	left: 0;
@@ -106,7 +106,7 @@
 
 ._active-items{ display: block; }
 
-.slt__item
+.select-1__item
 {
 	position: relative;
 	padding: 14px 16px;

@@ -1,0 +1,16 @@
+<form action="#">
+	<div class="select-1">
+		<div class="select-1__header select-1__icon" onclick="handleToggle()">
+			<label class="select-1__label" for="selectInput">Лейбл</label>
+			<input class="select-1__input" type="text" name="" id="selectInput" placeholder="Text">
+		</div>
+		<div class="select-1__items">
+			<div class="select-1__item" onclick="handleChoose(event)">Item 1</div>
+			<div class="select-1__item" onclick="handleChoose(event)">Item 2</div>
+			<div class="select-1__item" onclick="handleChoose(event)">Item 3</div>
+			<div class="select-1__item" onclick="handleChoose(event)">Item 4</div>
+			<div class="select-1__item" onclick="handleChoose(event)">Item 5</div>
+		</div>
+	</div>
+	<input type="text" class="_selected-value" name="" placeholder="Item 1" style="margin: 0 auto; width: 100%; max-width: 200px; display:flex;">
+</form>
