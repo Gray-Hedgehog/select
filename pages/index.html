@@ -24,20 +24,37 @@
 		</header>
 		<div class="conteiner">
 			<form action="#">
-				<div class="select-1">
-					<div class="select-1__header select-1__icon" onclick="o2.select.handleToggle()">
+				<div class="select-1 active">
+					<div class="select-1__header select-1__icon" onclick="o2.select.handleToggle(event)">
 						<label class="select-1__label" for="selectInput">Label</label>
 						<input class="select-1__input" type="text" readonly name="" id="selectInput" placeholder="Item 1">
 					</div>
-					<div class="select-1__items">
-						<div class="select-1__item" onclick="o2.select.handleChoose(event)">Item 1</div>
-						<div class="select-1__item" onclick="o2.select.handleChoose(event)">Item 2</div>
-						<div class="select-1__item" onclick="o2.select.handleChoose(event)">Item 3</div>
-						<div class="select-1__item" onclick="o2.select.handleChoose(event)">Item 4</div>
-						<div class="select-1__item" onclick="o2.select.handleChoose(event)">Item 5</div>
+					<div class="select-1__items" onclick="o2.select.handleChoose(event)">
+						<div class="select-1__item">Item 1</div>
+						<div class="select-1__item">Item 2</div>
+						<div class="select-1__item">Item 3</div>
+						<div class="select-1__item">Item 4</div>
+						<div class="select-1__item">Item 5</div>
 					</div>
 				</div>
-				<input type="hidden" class="_selected-value" name="selectInputHidden">
+				<input type="text" value="Item 1" class="_selected-value" name="selectInputHidden">
+			</form>
+
+			<form action="#">
+				<div class="select-1">
+					<div class="select-1__header select-1__icon" onclick="o2.select.handleToggle(event)">
+						<label class="select-1__label" for="selectInput">Label</label>
+						<input class="select-1__input" type="text" readonly name="" id="selectInput" placeholder="Item 1">
+					</div>
+					<div class="select-1__items" onclick="o2.select.handleChoose(event)">
+						<div class="select-1__item">Item 1</div>
+						<div class="select-1__item">Item 2</div>
+						<div class="select-1__item">Item 3</div>
+						<div class="select-1__item">Item 4</div>
+						<div class="select-1__item">Item 5</div>
+					</div>
+				</div>
+				<input type="text" value="Item 1" class="_selected-value" name="selectInputHidden">
 			</form> <label class="checkbox-1">
 				<span class="checkbox-1__item">Check</span>
 				<input class="checkbox-1__input" type="checkbox" name="" id="">

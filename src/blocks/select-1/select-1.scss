@@ -1,7 +1,7 @@
 .select-1
 {
-	position: fixed;
-	left: calc(50% - 500px);
+	// position: fixed;
+	// left: calc(50% - 500px);
 	display: flex;
 	flex-direction: column;
 	width:100%;
@@ -130,3 +130,12 @@
 
 	}
 }
+
+// .select-1
+// {
+// 	&.activ
+// 	{
+// 		.select-1__items {display: block;}
+// 		.select-1__header {}
+// 	}
+// }
