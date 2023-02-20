@@ -38,16 +38,43 @@ o2.select = {
 			}
 		});
 
-		console.log(event.composedPath())
+		console.log(event.target.closest('.select-1'));
+		// console.log(event.target.closest('.select-1').includes('select-1'));
 
-		console.log(event.composedPath().includes('.select-1__header'))
-		if ( event.target.closest('select-1__header') == true ) {
-			console.log('if')
+		if(event.target.closest('.select-1')) {
+			console.log('yes');
+			// this.handleToggle(event);
 			let selectItems = event.target.closest('.select-1').querySelector('.select-1__items');
 			let selectIcon  = event.target.closest('.select-1').querySelector('.select-1__icon');
-			selectItems.classList.toggle('_active-items');
-			selectIcon.classList.toggle('select-1__icon--open');
+			selectItems.classList.add('_active-items');
+			selectIcon.classList.add('select-1__icon--open');
+		} else {
+			// let selectItems = event.target.closest('.select-1').querySelector('.select-1__items');
+			// let selectIcon  = event.target.closest('.select-1').querySelector('.select-1__icon');
+			selectItems.classList.remove('_active-items');
+			selectIcon.classList.remove('select-1__icon--open');
 		}
+
+		// let select = document.querySelector('.select-1')
+		// console.log(select)
+		// if (event.target.contains(select) && event.target !== select) {
+		// 	console.log('You clicked outside the box!');
+		// } else {
+		// 	console.log('You clicked inside the box!');
+		// 	select.querySelector('.select-1__items').toggle('._active-items');
+		// }
+
+		// this.handleToggle(event)
+		// console.log(event.composedPath())
+
+		// console.log(event.composedPath().includes('select-1'))
+		// if ( event.target.closest('select-1__header') == true ) {
+		// 	console.log('if')
+		// 	let selectItems = event.target.closest('.select-1').querySelector('.select-1__items');
+		// 	let selectIcon  = event.target.closest('.select-1').querySelector('.select-1__icon');
+		// 	selectItems.classList.toggle('_active-items');
+		// 	selectIcon.classList.toggle('select-1__icon--open');
+		// }
 	},
 };
 
