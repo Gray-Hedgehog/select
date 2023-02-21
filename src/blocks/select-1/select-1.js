@@ -46,12 +46,14 @@ o2.select = {
 			// this.handleToggle(event);
 			let selectItems = event.target.closest('.select-1').querySelector('.select-1__items');
 			let selectIcon  = event.target.closest('.select-1').querySelector('.select-1__icon');
-			selectItems.classList.add('_active-items');
+			selectItems.classList.toggle('_active-items');
 			selectIcon.classList.add('select-1__icon--open');
-		} else {
-			// let selectItems = event.target.closest('.select-1').querySelector('.select-1__items');
-			// let selectIcon  = event.target.closest('.select-1').querySelector('.select-1__icon');
-			selectItems.classList.remove('_active-items');
+		}
+		else
+		{
+			console.log(event.target);
+			const selectIcon = event.target.closest('.select-1').querySelector('.select-1__icon');
+
 			selectIcon.classList.remove('select-1__icon--open');
 		}
 
@@ -78,4 +80,4 @@ o2.select = {
 	},
 };
 
-window.addEventListener('click', event => o2.select.windowClose(event));
+// window.addEventListener('click', event => o2.select.windowClose(event));

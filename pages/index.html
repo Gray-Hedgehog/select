@@ -70,6 +70,245 @@
 				<input class="checkbox-1__input" type="checkbox" name="" id="">
 				<div class="checkbox-1__custom"></div>
 			</label>
+			<div class="input-file">
+				<input class="input-file__input _file-input" type="file" name="inputFile" id="inputFile" onchange="o2.inputFile.onChoose(event)">
+				<label class="input-file__label" for="inputFile">Choose File...</label>
+				<span class="input-file__text">
+					<span class="input-file__title">Choosen file:</span>
+					&nbsp;
+					<span class="input-file__name _file-name">None</span>
+				</span>
+			</div> <label class="g-input">
+				<input name="name" type="text" class="g-input__input" placeholder="Placeholder" data-call="emty" data-msg="Заполните это поле">
+				<div class="g-input__sub">Error: invalid name</div>
+			</label>
+
+
+			<label class="g-input error">
+				<input name="name" type="text" class="g-input__input" placeholder="Placeholder" data-msg="Заполните это поле">
+				<div class="g-input__sub">Error: invalid name</div>
+			</label>
+
+			<label class="g-input g-input--icon">
+				<input name="name" type="text" class="g-input__input" placeholder="Placeholder">
+				<div class="g-input__icon">
+					<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.823 15.3474L15.8228 15.3473L11.7811 11.144C12.7992 10.0396 13.4228 8.56499 13.4228 6.94721C13.4228 3.52968 10.6432 0.75 7.22562 0.75C3.80809 0.75 1.02841 3.52968 1.02841 6.94721C1.02841 10.3647 3.80809 13.1444 7.22562 13.1444C8.64235 13.1444 9.94927 12.666 10.9937 11.8636L15.0536 16.0858L15.2343 15.9131L15.054 16.0863L15.0538 16.0861C15.1589 16.1958 15.2994 16.25 15.4384 16.25C15.5715 16.25 15.7047 16.2002 15.8077 16.1014L15.808 16.1011C16.0203 15.8969 16.0266 15.5596 15.823 15.3474ZM7.22562 12.078C4.3966 12.078 2.09481 9.77623 2.09481 6.94721C2.09481 4.11819 4.3966 1.8164 7.22562 1.8164C10.0546 1.8164 12.3564 4.11819 12.3564 6.94721C12.3564 9.77622 10.0544 12.078 7.22562 12.078Z" stroke-width="0.5" />
+					</svg>
+				</div>
+				<div class="g-input__sub">Error: invalid name</div>
+			</label>
+
+
+			<label class="g-input g-input--icon error">
+				<input name="name" type="text" class="g-input__input" placeholder="Placeholder">
+				<div class="g-input__icon">
+					<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.823 15.3474L15.8228 15.3473L11.7811 11.144C12.7992 10.0396 13.4228 8.56499 13.4228 6.94721C13.4228 3.52968 10.6432 0.75 7.22562 0.75C3.80809 0.75 1.02841 3.52968 1.02841 6.94721C1.02841 10.3647 3.80809 13.1444 7.22562 13.1444C8.64235 13.1444 9.94927 12.666 10.9937 11.8636L15.0536 16.0858L15.2343 15.9131L15.054 16.0863L15.0538 16.0861C15.1589 16.1958 15.2994 16.25 15.4384 16.25C15.5715 16.25 15.7047 16.2002 15.8077 16.1014L15.808 16.1011C16.0203 15.8969 16.0266 15.5596 15.823 15.3474ZM7.22562 12.078C4.3966 12.078 2.09481 9.77623 2.09481 6.94721C2.09481 4.11819 4.3966 1.8164 7.22562 1.8164C10.0546 1.8164 12.3564 4.11819 12.3564 6.94721C12.3564 9.77622 10.0544 12.078 7.22562 12.078Z" stroke-width="0.5" />
+					</svg>
+				</div>
+				<div class="g-input__sub">Error: invalid name</div>
+			</label>
+			<label class="g-input">
+				<input name="name" type="text" class="g-input__input _phone-mask" value="" placeholder="+7(___)___-__-__" autocomplete="off">
+				<div class="g-input__sub">Error: invalid phone</div>
+			</label>
+
+			<label class="g-input error">
+				<input name="name" type="text" class="g-input__input _phone-mask" value="" placeholder="+7(___)___-__-__" autocomplete="off">
+				<div class="g-input__sub">Error: invalid phone</div>
+			</label> <label class="g-checkbox">
+				<input type="checkbox" name="name" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">labelText</span>
+				</div>
+			</label> <label class="g-radio">
+				<input type="radio" name="radio" class="g-radio__input">
+				<div class="g-radio__body">
+					<span class="g-radio__box"></span>
+					<span class="g-radio__text">radio1</span>
+				</div>
+			</label> <label class="g-radio">
+				<input type="radio" name="radio" class="g-radio__input">
+				<div class="g-radio__body">
+					<span class="g-radio__box"></span>
+					<span class="g-radio__text">radio2</span>
+				</div>
+			</label>
+			<div class="g-tabs _tabs-container">
+				<ul class="g-tabs__menu">
+					<li class="g-tabs__item _tab active" onclick="o2.gTabs.open(this, 1)">
+						<a class="g-tabs__link" href="javascript:void(0);">Active</a>
+					</li>
+					<li class="g-tabs__item _tab" onclick="o2.gTabs.open(this, 2)">
+						<a class="g-tabs__link" href="javascript:void(0);">Inactive</a>
+					</li>
+					<li class="g-tabs__item _tab" onclick="o2.gTabs.open(this, 3)">
+						<a class="g-tabs__link" href="javascript:void(0);">Inactive</a>
+					</li>
+					<li class="g-tabs__item _tab" onclick="o2.gTabs.open(this, 4)">
+						<a class="g-tabs__link" href="javascript:void(0);">Inactive</a>
+					</li>
+				</ul>
+				<div class="g-tabs__content open" data-tab="1"> Tab 1 content </div>
+				<div class="g-tabs__content" data-tab="2"> Tab 2 content </div>
+				<div class="g-tabs__content" data-tab="3"> Tab 3 content </div>
+				<div class="g-tabs__content" data-tab="4"> Tab 4 content </div>
+			</div>
+			<div class="g-input g-date-picker">
+				<input class="g-input__input" type="text" name="birthday" placeholder="Select date" value="" />
+			</div>
+			<div class="g-slider">
+				<div class="g-slider__item-wr">
+					<div class="g-slider__item">
+						<div class="g-slider__content" style="width: 200px; height: 300px; background: red;"></div>
+					</div>
+				</div>
+				<div class="g-slider__item-wr">
+					<div class="g-slider__item">
+						<div class="g-slider__content" style="width: 200px; height: 300px; background: red;"></div>
+					</div>
+				</div>
+				<div class="g-slider__item-wr">
+					<div class="g-slider__item">
+						<div class="g-slider__content" style="width: 200px; height: 300px; background: red;"></div>
+					</div>
+				</div>
+				<div class="g-slider__item-wr">
+					<div class="g-slider__item">
+						<div class="g-slider__content" style="width: 200px; height: 300px; background: red;"></div>
+					</div>
+				</div>
+				<div class="g-slider__item-wr">
+					<div class="g-slider__item">
+						<div class="g-slider__content" style="width: 200px; height: 300px; background: red;"></div>
+					</div>
+				</div>
+				<div class="g-slider__item-wr">
+					<div class="g-slider__item">
+						<div class="g-slider__content" style="width: 200px; height: 300px; background: red;"></div>
+					</div>
+				</div>
+				<div class="g-slider__item-wr">
+					<div class="g-slider__item">
+						<div class="g-slider__content" style="width: 200px; height: 300px; background: red;"></div>
+					</div>
+				</div>
+				<div class="g-slider__item-wr">
+					<div class="g-slider__item">
+						<div class="g-slider__content" style="width: 200px; height: 300px; background: red;"></div>
+					</div>
+				</div>
+				<div class="g-slider__item-wr">
+					<div class="g-slider__item">
+						<div class="g-slider__content" style="width: 200px; height: 300px; background: red;"></div>
+					</div>
+				</div>
+				<div class="g-slider__item-wr">
+					<div class="g-slider__item">
+						<div class="g-slider__content" style="width: 200px; height: 300px; background: red;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="btn">
+				<button class="g-button">Button Text</button>
+			</div>
+			<div class="g-input-file__gallery"></div>
+			<label class="g-input-file__form">
+				<input class="g-input-file__file-inp" id="g-input-file__file-inp" type="file" name="files" onclick="o2.gInputFile.fileSelection()" multiple>
+				<div class="g-input-file__file-nm">Выберите файл</div>
+			</label>
+			<div class="spoiler__wrapper" style="padding: 0 20%;">
+				<h3>Независимое отображение</h3>
+
+				<div class="g-spoiler _g-spoiler">
+					<div class="g-spoiler__item">
+						<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this)">
+							Title 1
+						</div>
+						<ul class="g-spoiler__list _g-spoiler__list">
+							<li class="g-spoiler__list-item">Item 1</li>
+							<li class="g-spoiler__list-item">Item 2</li>
+							<li class="g-spoiler__list-item">Item 3</li>
+							<li class="g-spoiler__list-item">Item 4</li>
+							<li class="g-spoiler__list-item">Item 5</li>
+						</ul>
+					</div>
+					<div class="g-spoiler__item">
+						<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this)">
+							Title 2
+						</div>
+						<ul class="g-spoiler__list _g-spoiler__list">
+							<li class="g-spoiler__list-item">Item 1</li>
+							<li class="g-spoiler__list-item">Item 2</li>
+							<li class="g-spoiler__list-item">Item 3</li>
+							<li class="g-spoiler__list-item">Item 4</li>
+							<li class="g-spoiler__list-item">Item 5</li>
+						</ul>
+					</div>
+				</div>
+
+				<h3 style="margin-top: 50px;">Отображается максимум 1</h3>
+
+				<div class="g-spoiler _g-spoiler">
+					<div class="g-spoiler__item _g-spoiler__item">
+						<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this, 'one')">
+							Title 1
+						</div>
+						<ul class="g-spoiler__list _g-spoiler__list">
+							<li class="g-spoiler__list-item">Item 1</li>
+							<li class="g-spoiler__list-item">Item 2</li>
+							<li class="g-spoiler__list-item">Item 3</li>
+							<li class="g-spoiler__list-item">Item 4</li>
+							<li class="g-spoiler__list-item">Item 5</li>
+						</ul>
+					</div>
+					<div class="g-spoiler__item _g-spoiler__item">
+						<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this, 'one')">
+							Title 2
+						</div>
+						<ul class="g-spoiler__list _g-spoiler__list">
+							<li class="g-spoiler__list-item">Item 1</li>
+							<li class="g-spoiler__list-item">Item 2</li>
+							<li class="g-spoiler__list-item">Item 3</li>
+							<li class="g-spoiler__list-item">Item 4</li>
+							<li class="g-spoiler__list-item">Item 5</li>
+						</ul>
+					</div>
+				</div>
+
+				<h3 style="margin-top: 50px;">Отображается всегда только 1</h3>
+
+				<div class="g-spoiler _g-spoiler">
+					<div class="g-spoiler__item _g-spoiler__item">
+						<div class="g-spoiler__title _g-spoiler__title g-spoiler__title--active" onclick="o2.gSpoiler.spoilerToggle(this, 'onlyOne')">
+							Title 1
+						</div>
+						<ul class="g-spoiler__list _g-spoiler__list" style="display: block;">
+							<li class="g-spoiler__list-item">Item 1</li>
+							<li class="g-spoiler__list-item">Item 2</li>
+							<li class="g-spoiler__list-item">Item 3</li>
+							<li class="g-spoiler__list-item">Item 4</li>
+							<li class="g-spoiler__list-item">Item 5</li>
+						</ul>
+					</div>
+					<div class="g-spoiler__item _g-spoiler__item">
+						<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this, 'onlyOne')">
+							Title 2
+						</div>
+						<ul class="g-spoiler__list _g-spoiler__list">
+							<li class="g-spoiler__list-item">Item 1</li>
+							<li class="g-spoiler__list-item">Item 2</li>
+							<li class="g-spoiler__list-item">Item 3</li>
+							<li class="g-spoiler__list-item">Item 4</li>
+							<li class="g-spoiler__list-item">Item 5</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
 
 

@@ -2,7 +2,36 @@
 
 {% block page %}
 	<div class="conteiner">
-		{% include '/blocks/select-1/select-1.twig' %}
-		{% include '/blocks/checkbox/checkbox.twig' %}
+	{% include '/blocks/select-1/select-1.twig' %}
+	{% include '/blocks/checkbox/checkbox.twig' %}
+	{% include '/blocks/input-file/input-file.twig' %}
+	{% include '/blocks/g-input/g-input.twig' %}
+	{% include '/blocks/g-input/--icon.twig' %}
+	{% include '/blocks/g-masked-input/g-masked-input.twig' %}
+	{% include '/blocks/g-checkbox/g-checkbox.twig' with {
+	name: "name",
+	labelText: 'labelText'
+	}%}
+	{% include '/blocks/g-radio/g-radio.twig' with {
+	name: "radio",
+	labelText: 'radio1'
+	}%}
+	{% include '/blocks/g-radio/g-radio.twig' with {
+	name: "radio",
+	labelText: 'radio2'
+	}%}
+	{% include '/blocks/g-tabs/g-tabs.twig' %}
+	{% include '/blocks/g-date-picker/g-date-picker.twig' %}
+	{% include '/blocks/g-slider/g-slider.twig' %}
+
+	<div class="btn">
+	{% include '/blocks/g-button/g-button.twig' %}
+	</div>
+	{% include '/blocks/g-input-file/g-input-file.twig' %}
+	<div class="spoiler__wrapper" style="padding: 0 20%;">
+		{% include '/blocks/g-spoiler/g-spoiler.twig' %}
+	</div>
+
+
 	</div>
 {% endblock %}

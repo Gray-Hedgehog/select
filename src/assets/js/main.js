@@ -17,7 +17,8 @@ const o2 =
 	 */
 	init()
 	{
-		// this.gSelect.open();
+		this.gDatePicker.init();
+		this.initSlider();
 	},
 	/**
 	* отслеживание клика вне блока
