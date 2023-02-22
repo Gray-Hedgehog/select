@@ -1,0 +1,54 @@
+<div class="_popup-content">
+	<div class="locations">
+		<span class="locations__close _locations-close" onclick="o2.popup.popupClose(event)">{% include 'assets/svg/close.svg' %}</span>
+		<div class="locations__head">
+			<span class="locations__title">
+				{% include 'assets/svg/location.svg' %}
+				Ваш населённый пункт
+			</span>
+
+			<form action="">
+				<div class="locations__form">
+					<label class="locations__label" for="headerlocationsInput">Поиск населенного пункта</label>
+					<div class="locations__input-container">
+						<input class="locations__input" id="headerlocationsInput" type="text" name="headerlocationsInput" placeholder="Откуда вы?">
+						<button class="locations__button">{% include 'assets/svg/search3.svg' %}</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="locations__list">
+			<ul class="locations__ul">
+				<li class="locations__li">Москва</li>
+				<li class="locations__li locations__li--color">Санкт-Петербург</li>
+				<li class="locations__li">Новосибирск</li>
+				<li class="locations__li">Екатеринбург</li>
+				<li class="locations__li">Нижний Новгород</li>
+				<li class="locations__li">Казань</li>
+				<li class="locations__li">Челябинск</li>
+				<li class="locations__li">Омск</li>
+				<li class="locations__li">Самара</li>
+				<li class="locations__li">Ростов-на-Дону</li>
+				<li class="locations__li">Уфа</li>
+				<li class="locations__li">Саратов</li>
+				<li class="locations__li">Тверь</li>
+			</ul>
+			<ul class="locations__ul">
+				<li class="locations__li">Краснодар</li>
+				<li class="locations__li">Красноярск</li>
+				<li class="locations__li">Архангельск</li>
+				<li class="locations__li">Мурманск</li>
+				<li class="locations__li">Владивосток</li>
+				<li class="locations__li">Самара</li>
+				<li class="locations__li">Сочи</li>
+				<li class="locations__li">Пермь</li>
+				<li class="locations__li">Тольятти</li>
+				<li class="locations__li">Ижевск</li>
+				<li class="locations__li">Тула</li>
+				<li class="locations__li">Тюмень</li>
+				<li class="locations__li">Хабаровск</li>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -2,6 +2,8 @@
 
 {% block page %}
 	<div class="conteiner">
+	<a class="popup__in" onclick="o2.popup.popupOpen('_popup-content')">Moscow</a>
+	{% include '/blocks/locations/locations.twig' %}
 	{% include '/blocks/select-1/select-1.twig' %}
 	{% include '/blocks/checkbox/checkbox.twig' %}
 	{% include '/blocks/input-file/input-file.twig' %}
@@ -29,8 +31,10 @@
 	</div>
 	{% include '/blocks/g-input-file/g-input-file.twig' %}
 	<div class="spoiler__wrapper" style="padding: 0 20%;">
-		{% include '/blocks/g-spoiler/g-spoiler.twig' %}
+	{% include '/blocks/g-spoiler/g-spoiler.twig' %}
 	</div>
+	{% include '/blocks/g-yamap/g-yamap.twig' %}
+	{% include '/blocks/popup/popup.twig' %}
 
 
 	</div>

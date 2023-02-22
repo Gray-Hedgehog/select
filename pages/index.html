@@ -23,6 +23,69 @@
 			<div class="container"> </div>
 		</header>
 		<div class="conteiner">
+			<a class="popup__in" onclick="o2.popup.popupOpen('_popup-content')">Moscow</a>
+			<div class="_popup-content">
+				<div class="locations">
+					<span class="locations__close _locations-close" onclick="o2.popup.popupClose(event)"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<line x1="4.94983" y1="4.94974" x2="12.0209" y2="12.0208" stroke="#191C21" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" />
+							<line x1="4.94983" y1="12.0208" x2="12.0209" y2="4.94975" stroke="#191C21" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" />
+						</svg></span>
+					<div class="locations__head">
+						<span class="locations__title">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5843 9.87971L9.99996 15.7921L6.41557 9.87971C4.67704 7.01205 6.69699 3.30942 9.99996 3.30942C13.3029 3.30942 15.3229 7.01205 13.5843 9.87971ZM5.04793 10.7442C2.64606 6.78238 5.43673 1.66699 9.99996 1.66699C14.5632 1.66699 17.3539 6.78238 14.952 10.7442L10.5355 18.029C10.2893 18.4352 9.71064 18.4352 9.46439 18.029L5.04793 10.7442ZM10.0001 5.77305C9.11178 5.77305 8.39164 6.50839 8.39164 7.41547C8.39164 8.32256 9.11178 9.0579 10.0001 9.0579C10.8885 9.0579 11.6086 8.32256 11.6086 7.41547C11.6086 6.50839 10.8885 5.77305 10.0001 5.77305Z" />
+							</svg>
+							Ваш населённый пункт
+						</span>
+
+						<form action="">
+							<div class="locations__form">
+								<label class="locations__label" for="headerlocationsInput">Поиск населенного пункта</label>
+								<div class="locations__input-container">
+									<input class="locations__input" id="headerlocationsInput" type="text" name="headerlocationsInput" placeholder="Откуда вы?">
+									<button class="locations__button"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M14.0462 14.9796C13.8507 14.9793 13.6647 14.895 13.5356 14.7481L10.9076 11.7729C9.28604 12.7944 7.26491 12.9501 5.50599 12.1891C3.74706 11.4281 2.47684 9.8483 2.11123 7.96699C1.63097 5.53905 2.73474 3.07228 4.8651 1.81248C6.99547 0.552682 9.68884 0.773988 11.585 2.36463C13.4811 3.95528 14.1675 6.56914 13.2973 8.88612C13.1638 9.23769 12.7706 9.41449 12.419 9.281C12.0675 9.14752 11.8907 8.7543 12.0242 8.40273C12.5342 7.04576 12.3551 5.52574 11.5435 4.32456C10.7319 3.12337 9.38846 2.39 7.93916 2.35693C6.58758 2.3154 5.29202 2.8979 4.42606 3.93646C3.01733 5.62071 3.03936 8.07843 4.47805 9.73716C5.91675 11.3959 8.34667 11.7651 10.2131 10.6086C10.7809 10.2748 11.5062 10.3952 11.9357 10.8946L14.5637 13.8698C14.74 14.0706 14.7827 14.356 14.6726 14.5995C14.5626 14.843 14.3203 14.9997 14.053 15L14.0462 14.9796Z" fill="white" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="locations__list">
+						<ul class="locations__ul">
+							<li class="locations__li">Москва</li>
+							<li class="locations__li locations__li--color">Санкт-Петербург</li>
+							<li class="locations__li">Новосибирск</li>
+							<li class="locations__li">Екатеринбург</li>
+							<li class="locations__li">Нижний Новгород</li>
+							<li class="locations__li">Казань</li>
+							<li class="locations__li">Челябинск</li>
+							<li class="locations__li">Омск</li>
+							<li class="locations__li">Самара</li>
+							<li class="locations__li">Ростов-на-Дону</li>
+							<li class="locations__li">Уфа</li>
+							<li class="locations__li">Саратов</li>
+							<li class="locations__li">Тверь</li>
+						</ul>
+						<ul class="locations__ul">
+							<li class="locations__li">Краснодар</li>
+							<li class="locations__li">Красноярск</li>
+							<li class="locations__li">Архангельск</li>
+							<li class="locations__li">Мурманск</li>
+							<li class="locations__li">Владивосток</li>
+							<li class="locations__li">Самара</li>
+							<li class="locations__li">Сочи</li>
+							<li class="locations__li">Пермь</li>
+							<li class="locations__li">Тольятти</li>
+							<li class="locations__li">Ижевск</li>
+							<li class="locations__li">Тула</li>
+							<li class="locations__li">Тюмень</li>
+							<li class="locations__li">Хабаровск</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 			<form action="#">
 				<div class="select-1">
 					<div class="select-1__header select-1__icon" onclick="o2.select.handleToggle(event)">
@@ -307,7 +370,14 @@
 					</div>
 				</div>
 			</div>
-
+			<div class="g-yamap">
+				<div class="g-yamap__map" id="yamap">
+					<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/33/vladikavkaz/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Владикавказ</a><a href="https://yandex.ru/maps/geo/vladikavkaz/53119295/?ll=44.686998%2C43.026754&utm_medium=mapframe&utm_source=maps&z=15.26" style="color:#eee;font-size:12px;position:absolute;top:14px;">Владикавказ — Яндекс Карты</a>
+						<iframe src="https://yandex.ru/map-widget/v1/?ll=44.686998%2C43.026754&mode=poi&poi%5Bpoint%5D=44.681760%2C43.024617&poi%5Buri%5D=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzExOTI5NRJp0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQodC10LLQtdGA0L3QsNGPINCe0YHQtdGC0LjRjyDigJQg0JDQu9Cw0L3QuNGPLCDQktC70LDQtNC40LrQsNCy0LrQsNC3IgoNIboyQhU1GSxC&z=15.26" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="popup _popup-overlay"></div>
 
 		</div>
 
