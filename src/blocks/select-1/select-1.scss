@@ -1,6 +1,16 @@
+.select-1__container
+{
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+}
+
 .select-1
 {
-	// position: fixed;
+	position: absolute;
+	top: 0;
+
+	z-index: 9999999999;
 	// left: calc(50% - 500px);
 	display: flex;
 	flex-direction: column;
