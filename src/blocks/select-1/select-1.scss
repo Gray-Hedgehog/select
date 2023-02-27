@@ -3,12 +3,14 @@
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(3, auto);
+
 }
 
 .select-1
 {
 	position: absolute;
 	top: 0;
+	transform: translateX(50%);
 
 	z-index: 9999999999;
 	// left: calc(50% - 500px);
