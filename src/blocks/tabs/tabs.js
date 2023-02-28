@@ -1,8 +1,21 @@
 o2.tabs = {
-	onTarget(event) {
+	onTarget(event, tabId) {
 		const items = document.querySelectorAll('.tabs__item');
 
-		items.forEach( (element) => { element.classList.remove('_tab-active'); })
+		items.forEach( (element) => { element.classList.remove('_tab-active'); });
 		event.target.closest('.tabs__item').classList.add('_tab-active');
+
+		this.isContent(tabId);
+	},
+
+	isContent(tabId) {
+		const tabsContent = document.querySelectorAll('.tabs__content');
+
+		tabsContent.forEach( function(element) {
+			element.classList.remove('open');
+			if ( Number(element.dataset.tab) === tabId ) {
+				element.classList.add('open');
+			}
+		});
 	}
 }

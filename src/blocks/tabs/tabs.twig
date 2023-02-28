@@ -1,10 +1,14 @@
-<div class="tabs_container">
+<div class="tabs__container">
 	<ul class="tabs__menu">
-		<li class="tabs__item _tab-active" onclick="o2.tabs.onTarget(event)"><a class="tabs__link" href="javascript:void(0);">Tab 1</a></li>
-		<li class="tabs__item" onclick="o2.tabs.onTarget(event)"><a class="tabs__link" href="javascript:void(0);">Tab asdasd2</a></li>
-		<li class="tabs__item" onclick="o2.tabs.onTarget(event)"><a class="tabs__link" href="javascript:void(0);">Tab sda3</a></li>
-		<li class="tabs__item" onclick="o2.tabs.onTarget(event)"><a class="tabs__link" href="javascript:void(0);">Tab 4</a></li>
-		<li class="tabs__item" onclick="o2.tabs.onTarget(event)"><a class="tabs__link" href="javascript:void(0);">Tab ss5</a></li>
+		<li class="tabs__item _tab-active" onclick="o2.tabs.onTarget(event, 1)"><a class="tabs__link" href="javascript:void(0);">Tab 1</a></li>
+		<li class="tabs__item" onclick="o2.tabs.onTarget(event, 2)"><a class="tabs__link" href="javascript:void(0);">Tab asdasd2</a></li>
+		<li class="tabs__item" onclick="o2.tabs.onTarget(event, 3)"><a class="tabs__link" href="javascript:void(0);">Tab sda3</a></li>
+		<li class="tabs__item" onclick="o2.tabs.onTarget(event, 4)"><a class="tabs__link" href="javascript:void(0);">Tab 4</a></li>
+		<li class="tabs__item" onclick="o2.tabs.onTarget(event, 5)"><a class="tabs__link" href="javascript:void(0);">Tab ss5</a></li>
 	</ul>
-	<span class=""></span>
+	<div class="tabs__content open" data-tab="1">Tab 1 content</div>
+	<div class="tabs__content" data-tab="2">Tab 2 content</div>
+	<div class="tabs__content" data-tab="3">Tab 3 content</div>
+	<div class="tabs__content" data-tab="4">Tab 4 content</div>
+	<div class="tabs__content" data-tab="5">Tab 5 content</div>
 </div>
