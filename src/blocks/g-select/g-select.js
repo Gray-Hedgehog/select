@@ -36,6 +36,7 @@ o2.gSelect =
 	toggle(instance)
 	{
 		let $select = $(instance).parents('._select')
+		console.log(instance)
 		if (!$select.hasClass('g-select--opened'))
 			this.open($select);
 		else

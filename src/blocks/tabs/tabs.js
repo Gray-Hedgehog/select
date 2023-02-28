@@ -12,8 +12,9 @@ o2.tabs = {
 		const tabsContent = document.querySelectorAll('.tabs__content');
 
 		tabsContent.forEach( function(element) {
-			element.classList.remove('open');
-			if ( Number(element.dataset.tab) === tabId ) {
+			if ( Number(element.dataset.tab) !== tabId ) {
+				element.classList.remove('open');
+			} else {
 				element.classList.add('open');
 			}
 		});

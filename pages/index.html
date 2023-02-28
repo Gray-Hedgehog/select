@@ -89,9 +89,13 @@
 			<div class="select-1__container">
 				<form action="#">
 					<div class="select-1">
-						<div class="select-1__header select-1__icon" onclick="o2.select.handleToggle(event)">
+						<div class="select-1__header" onclick="o2.select.handleToggle(event)">
 							<label class="select-1__label" for="selectInput">Label</label>
 							<input class="select-1__input" type="text" readonly name="" id="selectInput" placeholder="Item 1">
+							<div class="select-1__icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9303 5.70954C12.2652 5.35231 12.8481 5.29781 13.2578 5.57982C13.4991 5.74798 13.6412 6.00768 13.6412 6.287C13.6412 6.49758 13.5594 6.70099 13.4084 6.86467L8.74744 11.8301C8.5611 12.0282 8.29063 12.1391 8.00804 12.1391C7.72573 12.1391 7.45339 12.0275 7.26965 11.8297L2.63346 6.88555C2.26772 6.49534 2.34276 5.90596 2.78606 5.60085C3.19401 5.32007 3.77689 5.37457 4.11164 5.73171L8.00949 9.88749L11.9303 5.70954Z" fill="#ADB4BB" />
+								</svg>
+							</div>
 						</div>
 						<div class="select-1__items" onclick="o2.select.handleChoose(event)">
 							<div class="select-1__item">Item 1</div>
@@ -106,9 +110,13 @@
 
 				<form action="#">
 					<div class="select-1">
-						<div class="select-1__header select-1__icon" onclick="o2.select.handleToggle(event)">
+						<div class="select-1__header" onclick="o2.select.handleToggle(event)">
 							<label class="select-1__label" for="selectInput">Label</label>
 							<input class="select-1__input" type="text" readonly name="" id="selectInput" placeholder="Item 1">
+							<div class="select-1__icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9303 5.70954C12.2652 5.35231 12.8481 5.29781 13.2578 5.57982C13.4991 5.74798 13.6412 6.00768 13.6412 6.287C13.6412 6.49758 13.5594 6.70099 13.4084 6.86467L8.74744 11.8301C8.5611 12.0282 8.29063 12.1391 8.00804 12.1391C7.72573 12.1391 7.45339 12.0275 7.26965 11.8297L2.63346 6.88555C2.26772 6.49534 2.34276 5.90596 2.78606 5.60085C3.19401 5.32007 3.77689 5.37457 4.11164 5.73171L8.00949 9.88749L11.9303 5.70954Z" fill="#ADB4BB" />
+								</svg>
+							</div>
 						</div>
 						<div class="select-1__items" onclick="o2.select.handleChoose(event)">
 							<div class="select-1__item">Item 1</div>
@@ -123,9 +131,13 @@
 
 				<form action="#">
 					<div class="select-1">
-						<div class="select-1__header select-1__icon" onclick="o2.select.handleToggle(event)">
+						<div class="select-1__header" onclick="o2.select.handleToggle(event)">
 							<label class="select-1__label" for="selectInput">Label</label>
 							<input class="select-1__input" type="text" readonly name="" id="selectInput" placeholder="Item 1">
+							<div class="select-1__icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9303 5.70954C12.2652 5.35231 12.8481 5.29781 13.2578 5.57982C13.4991 5.74798 13.6412 6.00768 13.6412 6.287C13.6412 6.49758 13.5594 6.70099 13.4084 6.86467L8.74744 11.8301C8.5611 12.0282 8.29063 12.1391 8.00804 12.1391C7.72573 12.1391 7.45339 12.0275 7.26965 11.8297L2.63346 6.88555C2.26772 6.49534 2.34276 5.90596 2.78606 5.60085C3.19401 5.32007 3.77689 5.37457 4.11164 5.73171L8.00949 9.88749L11.9303 5.70954Z" fill="#ADB4BB" />
+								</svg>
+							</div>
 						</div>
 						<div class="select-1__items" onclick="o2.select.handleChoose(event)">
 							<div class="select-1__item">Item 1</div>
@@ -152,6 +164,28 @@
 				<input class="checkbox-1__input" type="checkbox" name="" id="">
 				<div class="checkbox-1__custom"></div>
 			</label>
+			<div class="g-select _select">
+				<input type="hidden" class="_selected-value" />
+				<div class="g-select__selected fdksfk" onclick="o2.gSelect.toggle(this)">
+					<div class="g-select__selected-name _selected-text">Выберите страну</div>
+					<div class="g-select__arrow">
+						<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.6042 0.877323L11.6041 0.877358L6.49996 5.99154L1.38574 0.877323C1.20497 0.696556 0.9113 0.696556 0.730533 0.877323C0.549767 1.05809 0.549767 1.35176 0.730533 1.53253L6.16232 6.96431C6.25248 7.05448 6.36605 7.09988 6.48992 7.09988C6.60306 7.09988 6.72691 7.05492 6.81752 6.96431L12.2488 1.53305C12.4403 1.35222 12.4402 1.05811 12.2594 0.877323C12.0786 0.696556 11.7849 0.696557 11.6042 0.877323Z" fill="#191C21" stroke="#191C21" stroke-width="0.1" />
+						</svg>
+					</div>
+				</div>
+				<div class="g-select__error">Error: обязательное поле</div>
+				<div class="g-select__list _options">
+					<ul class="g-select__items">
+						<li data-value="code-Australia" class="g-select__item _option g-select__item--active" onclick="o2.gSelect.selecttItem(this)">Australia</li>
+						<li data-value="code-Argentina" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">Argentina</li>
+						<li data-value="code-Belgium" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">Belgium</li>
+						<li data-value="code-Canada" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">Canada</li>
+						<li data-value="code-Italy" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">Italy</li>
+						<li data-value="code-New Zealand" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">New Zealand</li>
+					</ul>
+				</div>
+			</div>
 			<div class="tabs__container">
 				<ul class="tabs__menu">
 					<li class="tabs__item _tab-active" onclick="o2.tabs.onTarget(event, 1)"><a class="tabs__link" href="javascript:void(0);">Tab 1</a></li>
