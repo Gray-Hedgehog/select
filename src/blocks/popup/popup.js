@@ -1,11 +1,15 @@
 o2.popup = {
 	popupOverlay: document.querySelector('._popup-overlay'),
 	popupOpen(contentClass) {
+		const body = document.querySelector('body');
 		let contentHtml = document.querySelector(`.${contentClass}`).innerHTML;
+		body.style.overflow = 'hidden';
 		this.popupOverlay.innerHTML = contentHtml;
 		this.popupOverlay.classList.add('_popup-open');
 	},
-	popupClose(event) {
+	popupClose() {
+		const body = document.querySelector('body');
+		body.style.overflow = 'visible';
 		this.popupOverlay.classList.remove('_popup-open')
 	},
 
@@ -17,7 +21,14 @@ o2.popup = {
 		if ((boolOpen == true) && (collectionLenth === 6)) {
 			this.popupClose(event);
 		}
-	}
+
+		this.setEscEvent();
+	},
+
+	setEscEvent(event)
+	{
+		window.onkeydown = (event) => { (event.key === 'Escape') && (this.popupClose()) };
+	},
 }
 
 window.addEventListener('click', (event) => { o2.popup.outsideClick(event) });
