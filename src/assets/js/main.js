@@ -19,7 +19,8 @@ const o2 =
 	{
 		this.gDatePicker.init();
 		this.initSlider();
-		this.gYamap.init();
+		// this.gYamap.init();
+		this.slider.init();
 	},
 	/**
 	* отслеживание клика вне блока
